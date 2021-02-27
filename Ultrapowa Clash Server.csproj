@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>59b95aef-edf4-4938-9050-8d743504b41c</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Ultrapowa Clash Server</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="EntityFramework" />
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="FileHelpers" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Database\Clan.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Helpers\Helpers.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Helpers\Broadcasting.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Helpers\ObjectCopier.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\BuildingMap.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\Building.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\ClanChatMessage.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\Village.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\RespawnVars.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\Item.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\Player.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\World\Clan.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\GameFiles\FingerPrint.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\GameFiles\GameFile.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Database\Player.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Database\ucsdbEntities.cs" />
+    <Compile Include="Ultrapowa_Clash_Server\Network\SocketRead.cs" />
+    <Compile Include="w.cs" />
+    <Compile Include="ab.cs" />
+    <Compile Include="n.cs" />
+    <Compile Include="af.cs" />
+    <Compile Include="p.cs" />
+    <Compile Include="u.cs" />
+    <Compile Include="r.cs" />
+    <Compile Include="ak.cs" />
+    <Compile Include="v.cs" />
+    <Compile Include="h.cs" />
+    <Compile Include="x.cs" />
+    <Compile Include="a.cs" />
+    <Compile Include="ah.cs" />
+    <Compile Include="y.cs" />
+    <Compile Include="j.cs" />
+    <Compile Include="aj.cs" />
+    <Compile Include="am.cs" />
+    <Compile Include="ai.cs" />
+    <Compile Include="al.cs" />
+    <Compile Include="aa.cs" />
+    <Compile Include="f.cs" />
+    <Compile Include="i.cs" />
+    <Compile Include="t.cs" />
+    <Compile Include="c.cs" />
+    <Compile Include="b.cs" />
+    <Compile Include="m.cs" />
+    <Compile Include="k.cs" />
+    <Compile Include="ad.cs" />
+    <Compile Include="ag.cs" />
+    <Compile Include="o.cs" />
+    <Compile Include="z.cs" />
+    <Compile Include="l.cs" />
+    <Compile Include="s.cs" />
+    <Compile Include="q.cs" />
+    <Compile Include="d.cs" />
+    <Compile Include="g.cs" />
+    <Compile Include="e.cs" />
+    <Compile Include="ae.cs" />
+    <Compile Include="ac.cs" />
+    <EmbeddedResource Include="Database.ucsdb.csdl" />
+    <EmbeddedResource Include="Database.ucsdb.msl" />
+    <EmbeddedResource Include="Database.ucsdb.ssdl" />
+  </ItemGroup>
+</Project>
