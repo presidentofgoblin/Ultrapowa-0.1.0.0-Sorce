@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ucsdbModelStoreContainer" CdmEntityContainer="ucsdbEntities">
+    <EntitySetMapping Name="Player">
+      <EntityTypeMapping TypeName="ucsdbModel.Player">
+        <MappingFragment StoreEntitySet="Player">
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="SerializedData" ColumnName="SerializedData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clan">
+      <EntityTypeMapping TypeName="ucsdbModel.Clan">
+        <MappingFragment StoreEntitySet="Clan">
+          <ScalarProperty Name="SerializedData" ColumnName="SerializedData" />
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="ClanId" ColumnName="ClanId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
